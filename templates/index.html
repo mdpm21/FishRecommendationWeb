@@ -13,7 +13,7 @@
     <title>Panel</title>
     <link
       rel="shortcut icon"
-      href="{{url_for('static', filename='img/logo-panel.png') }}"
+      href="https://storage.googleapis.com/web2-buck/logo-panel.png"
     />
     <link
       rel="stylesheet"
@@ -35,7 +35,7 @@
     <nav class="navbar navbar-expand-lg custom-navbar" data-aos="fade-down">
       <div class="container mt-1">
         <div class="navbar-left">
-          <a href="index2.html" class="navbar-brand">PANEL</a>
+          <a href="index.html" class="navbar-brand">PANEL</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -87,21 +87,21 @@
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <img
-                      src="{{url_for('static', filename='img/banner1.png') }}"
+                      src="https://storage.googleapis.com/web2-buck/banner1.png"
                       alt="Carousel Image"
                       class="d-block w-100"
                     />
                   </div>
                   <div class="carousel-item">
                     <img
-                      src="{{url_for('static', filename='/img/banner2.png') }}"
+                      src="https://storage.googleapis.com/web2-buck/banner2.png"
                       alt="Carousel Image"
                       class="d-block w-100"
                     />
                   </div>
                   <div class="carousel-item">
                     <img
-                      src="{{url_for('static', filename='/img/banner3.png') }}"
+                      src="https://storage.googleapis.com/web2-buck/banner3.png"
                       alt="Carousel Image"
                       class="d-block w-100"
                     />
@@ -137,62 +137,50 @@
                     <button type="submit" class="btn btn-primary ml-2">Cari</button>
                 </div>
             </form>
-            <div class="table-container">
               <table class="table table-striped text-center mt-3">
-
-                <style>
-                  .table-container {
-                    max-height: 700px; /* Set the desired height for the scrollable area */
-                    overflow-y: scroll; /* Enable vertical scroll */
-                  }
-                  
-                  .table.table-striped.text-center {
-                    width: 100%;
-                    border-collapse: collapse;
-                  }
-                  
-                  .table.table-striped.text-center th,
-                  .table.table-striped.text-center td {
-                    padding: 10px;
-                    border: 1px solid #ccc;
-                  }
-                  
-                  .table.table-striped.text-center th.bg-white {
-                    background-color: #fff;
-                  }
-                  
-                  .table.table-striped.text-center th.rounded-left-xl {
-                    border-radius: 5px 0 0 5px;
-                  }
-                  
-                  /* Add additional CSS styling as needed */
-                </style>
-
-                
                 <thead>
                   <tr>
-                    <th class="font-weight-bold rounded-left-xl p-5" style="background-color: #292f3f; color: #fdff8a">
+                    <th
+                      class="font-weight-bold rounded-left-xl p-5"
+                      style="background-color: #292f3f; color: #fdff8a"
+                    >
                       No
                     </th>
-                    <th class="font-weight-bold p-5" style="background-color: #292f3f; color: #fdff8a">
+                    <th
+                      class="font-weight-bold p-5"
+                      style="background-color: #292f3f; color: #fdff8a"
+                    >
                       Nama Ikan
                     </th>
-                    <!-- <th class="font-weight-bold p-5" style="background-color: #292f3f; color: #fdff8a">
+                    <!-- <th
+                      class="font-weight-bold p-5"
+                      style="background-color: #292f3f; color: #fdff8a"
+                    >
                       Harga
                     </th> -->
-                    <!-- <th class="font-weight-bold p-5" style="background-color: #292f3f; color: #fdff8a">
+                    <!-- <th
+                      class="font-weight-bold p-5"
+                      style="background-color: #292f3f; color: #fdff8a"
+                    >
                       Kebutuhan Pasar
                     </th> -->
-                    <th class="font-weight-bold p-5" style="background-color: #292f3f; color: #fdff8a">
+                    <th
+                      class="font-weight-bold p-5"
+                      style="background-color: #292f3f; color: #fdff8a"
+                    >
                       Status
                     </th>
-                    <th class="font-weight-bold rounded-right-xl p-5" style="background-color: #292f3f; color: #fdff8a">
+                    <th
+                      class="font-weight-bold rounded-right-xl p-5"
+                      style="background-color: #292f3f; color: #fdff8a"
+                    >
                       Populer di Kota
                     </th>
                   </tr>
                 </thead>
+                <!-- ini -->
                 <tbody>
-                  {% for _, row in outputkab.iterrows() %}
+                    {% for _, row in outputkab.iterrows() %}
                   <tr>
                     <td class="bg-white rounded-left-xl p-5">
                       {{ loop.index }}
@@ -204,9 +192,6 @@
                   {% endfor %}
                 </tbody>
               </table>
-            </div>
-                </div>
-
             </div>
           </div>
         </div>
@@ -228,7 +213,7 @@
               <a href="index.html" class="component-categories d-block">
                 <div class="categories-image">
                   <img
-                    src="{{url_for('static', filename='/img/price.png') }}"
+                    src="https://storage.googleapis.com/web2-buck/price.png"
                     alt=""
                     class="w-100"
                   />
@@ -244,7 +229,7 @@
               <a href="index.html" class="component-categories d-block">
                 <div class="categories-image">
                   <img
-                    src="{{url_for('static', filename='/img/pisciculture.png') }}"
+                    src="https://storage.googleapis.com/web2-buck/pisciculture.png"
                     alt=""
                     class="w-100"
                   />
@@ -264,7 +249,7 @@
               >
                 <div class="categories-image">
                   <img
-                    src="{{url_for('static', filename='/img/fish.png') }}"
+                    src="https://storage.googleapis.com/web2-buck/fish.png"
                     alt=""
                     class="w-100"
                   />
