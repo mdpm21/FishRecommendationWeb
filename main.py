@@ -12,7 +12,7 @@ def index():
     # if request.method == 'POST':
 
     # Load Data
-    data_cluster = pd.read_csv("https://storage.googleapis.com/tim_panel1/DataCobaNew.csv")
+    data_cluster = pd.read_csv("https://storage.googleapis.com/panel-buck/DataCobaNew.csv")
     data_cluster = data_cluster[['Volume_Produksi','Konsumsi']]
     
     # Feature Scaling
@@ -24,7 +24,7 @@ def index():
     labels = kmeans.labels_
     
     # Add labels to a new column
-    ikan = pd.read_csv("https://storage.googleapis.com/tim_panel1/DataCobaNew.csv")
+    ikan = pd.read_csv("https://storage.googleapis.com/panel-buck/DataCobaNew.csv")
     ikan['Cluster'] = labels
     
     # Data Frame Manipulation
